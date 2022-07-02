@@ -1,0 +1,17 @@
+.about__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__item {
+  width: 270px;
+}
+
+.about__box {
+  background-color: var(--light-backgound);
+  margin-bottom: 30px;
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
