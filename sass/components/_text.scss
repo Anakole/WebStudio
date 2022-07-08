@@ -4,13 +4,19 @@
   text-align: center;
 }
 
+.work_top-title {
+  @include desktop {
+    @include font(36px, 700, 1.16, null);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
 /*--------------HERO-------------*/
 
 .hero__title {
-  @include font(44px, 900, 1.36, null);
-  letter-spacing: 0.06em;
+  @include font(26px, 900, 1.6, 0.06em);
   text-transform: uppercase;
-  width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -21,30 +27,37 @@
 
 .about__title {
   @include font(14px, 700, 1.14, null);
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .about__text {
-  @include font(null, null, 1.7, null);
+  @include font(14px, null, 1.7, null);
   color: var(--text-color);
 }
 
 /*--------------WORK-------------*/
 
 .pick-list__text {
-  @include font(14px, 700, 1.14, null);
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--light-text-color);
-  text-align: center;
-  text-transform: uppercase;
-  width: 370px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
+  @include desktop {
+    @include font(14px, 700, 1.14, null);
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--light-text-color);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 /*--------------TEAM-------------*/
@@ -73,20 +86,6 @@
 }
 
 /*--------------PORTFOLIO-------------*/
-
-.portfolio-hover-text {
-  @include font(18px, null, 1.5, null);
-  position: absolute;
-  top: 0;
-  background-color: rgba(33, 150, 243, 0.9);
-  color: var(--light-text-color);
-  height: 100%;
-  padding-top: 63px;
-  padding-left: 24px;
-  padding-right: 24px;
-  transform: translateY(100%);
-  transition: transform 250ms linear;
-}
 
 .portfolio-title {
   @include font(18px, 700, 2, 0.06em);

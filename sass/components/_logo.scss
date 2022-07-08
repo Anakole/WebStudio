@@ -1,19 +1,23 @@
 .nav__logo {
   margin-right: 94px;
   font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(24px, 700, 1.16, null);
   color: var(--logo-color);
+
+  @include desktop {
+    @include font(26px, 700, 1.19, null);
+  }
 }
 
 .footer__logo {
+  @include font(24px, 700, 1.16, null);
   font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   margin-bottom: 20px;
   color: var(--light-text-color);
+
+  @include desktop {
+    @include font(36px, 700, 1.16, null);
+  }
 }
 
 .logo-web {

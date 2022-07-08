@@ -1,10 +1,21 @@
 .about__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  // justify-content: space-between;
 }
 
 .about__item {
-  width: 270px;
+  width: 450px;
+
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .about__box {
