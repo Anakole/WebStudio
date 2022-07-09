@@ -156,8 +156,8 @@
   line-height: 1.4;
   color: var(--text-color);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
   &::before {
     content: '';
@@ -185,6 +185,8 @@
   @include mobile {
     font-size: 12px;
     line-height: 1.16;
+    justify-content: center;
+    flex-wrap: nowrap;
   }
 
   @include desktop {

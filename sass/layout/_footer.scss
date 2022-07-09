@@ -15,8 +15,9 @@
     justify-content: space-around;
     align-items: baseline;
   }
-  // align-items: baseline;
-  // justify-content: space-between;
+
+  @include desktop {
+  }
 }
 
 .footer__info {
@@ -25,7 +26,9 @@
   margin: 0;
 
   @include desktop {
+    text-align: left;
     margin-right: 70px;
+    align-items: baseline;
   }
 }
 

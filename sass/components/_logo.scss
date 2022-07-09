@@ -12,7 +12,6 @@
 .footer__logo {
   @include font(24px, 700, 1.16, null);
   font-family: 'Raleway';
-  margin-bottom: 20px;
   color: var(--light-text-color);
 
   @include desktop {

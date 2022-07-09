@@ -1,7 +1,11 @@
 .top-title {
-  @include font(36px, 700, 1.16, null);
-  margin-bottom: 50px;
-  text-align: center;
+  @include font(28px, 700, 1.17, null);
+
+  @include desktop {
+    @include font(36px, 700, 1.16, null);
+    margin-bottom: 50px;
+    text-align: center;
+  }
 }
 
 .work_top-title {
@@ -83,6 +87,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
+
+  @include desktop {
+    text-align: left;
+  }
 }
 
 /*--------------PORTFOLIO-------------*/
