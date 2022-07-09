@@ -400,7 +400,7 @@ body {
 }
 .modal-check:checked + .check-text::before {
   background-color: var(--accent-color);
-  background-image: url(../images/studio/check.svg);
+  background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-position: 70% 60%;
   border: none;
